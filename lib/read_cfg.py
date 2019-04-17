@@ -11,5 +11,3 @@ def load(section=None):
 		return config['DEFAULT']
 	else:
 		return config[section]
-
-
