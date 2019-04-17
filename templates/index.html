@@ -7,11 +7,14 @@
   <title>Decentralized HyperChat Program - home</title>
 </head>
 <body>
-  <h3>Dcentralized Hyper Chat Program v{{config.version}}</h3>
-  <form method="POST">
-    <input type="text" name="message" placeholder="Message...">
-    <input type="text" name="address" placeholder="Reciever Address">
-    <input type="submit" vaule="Send Message!">
-  </form>
+  <div id="header">
+    <h3>Dcentralized Hyper Chat Program v{{config.version}}</h3>
+  </div>
+  <div id="sidebar">
+  </div>
+  <div id="settings">
+    <form id="settings-form" onsubmit="updateSettings();">
+    </form>
+  </div>
 </body>
 </html>
