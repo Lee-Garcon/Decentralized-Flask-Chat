@@ -14,7 +14,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+#lib/ Is being used
 lib64/
 parts/
 sdist/
