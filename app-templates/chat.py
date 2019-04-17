@@ -65,7 +65,7 @@ def client():
 
 	elif request.method == 'POST':
 		if request.form.get("action") == "initiate-handshake":
-			#handshake initiation
+			# handshake initiation
 			addr = request.form.get("recipient")
 			data = {"type": "handshake-request",
 				"key": MYKEY,
