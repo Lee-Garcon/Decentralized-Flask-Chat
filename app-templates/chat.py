@@ -56,9 +56,9 @@ def result():
 			return jsonify(data), 200
 		else:
 			return 400
-		
 
-@app.route('/client', methods=['GET', 'POST']):
+
+@app.route('/client', methods=['GET', 'POST'])
 def client():
 	if request.method == 'GET':
 		return render_template('client.html', name=NAME)
