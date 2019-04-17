@@ -24,6 +24,10 @@ class RSA_Local:
 		f = open(self.private_path, 'w')
 		f.write(privkey)
 		f.close()
+
+		f = open(self.list_path, 'a')
+		f.write(self.public_path + '\n' + self.private_path + '\n')
+		f.close()
 	
 		return RSA.importKey(pubkey), RSA.importKey(privkey)
 
@@ -85,7 +89,11 @@ class RSA_Guest:
 			self.pubkey = RSA.importKey(f.read())
 			f.close()
 		except:
+			lister_path = os.path.join(cpath, "../keys/keys.lst")
 			self.pubkey = RSA.importKey(self.key_decode(provided_pubkey))
+			f = open(lister_path, 'a')
+			f.write(self.keypath + '\n')
+			f.close()
 
 	def encrypt(self, data):
 		cipher = PKCS1_OAEP.new(self.pubkey)
