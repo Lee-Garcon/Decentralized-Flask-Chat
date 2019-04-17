@@ -12,7 +12,7 @@ AUTHOR = 'Lee-Garcon, Exr0n'
 REQUIRES_PYTHON = '>=3.6.0'
 VERSION = 0.0.1
 
-REQUIRED = ['pycrypto', 'flask', 'flask-cors']
+REQUIRED = ['pycrypto', 'flask', 'flask-cors', 'requests']
 
 cpath = os.path.abspath(os.path.dirname(__file__))
 
