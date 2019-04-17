@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, render_template, redirect, url_for
 import hashlib, time
 import lib.rsa as rsa
 import lib.read_cfg as rcfg
+import lib.img_b64.py as img64
 import os
 
 #=== === === Paths === === ===
