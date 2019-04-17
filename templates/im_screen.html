@@ -8,6 +8,23 @@
   <title>Decentralized HyperChat Program - Messages</title>
 </head>
 <body>
-  <h3>Decentralized Hyper ChatProgram v{{config.version}}</h3>
+  <div id="header">
+    <h3>Decentralized Hyper ChatProgram v{{config.version}}</h3>
+  </div>
+  <div id="sidebar">
+    <ul id="converstation-list">
+    <ul>
+  </div>
+  <div id="im-area">
+    <div id="text-area">
+      <ul id="message-list">
+      </ul>
+    </div>
+    <div id="type-area">
+      <form id="send-message" onsubmit="submit_">
+        <input type="text" id="send-message-field">
+      </form>
+    </div>
+  </div>
 </body>
 </html>
