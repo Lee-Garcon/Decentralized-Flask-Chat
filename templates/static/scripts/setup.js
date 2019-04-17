@@ -1,6 +1,7 @@
 var default_config = {
   im_behavior: {
-    update_interval: 500 // ms
+    update_interval: 500, // ms
+    send_server_timeout: 3000 // miliseconds to wait before the client asks if the server is down
   }
 }
 
