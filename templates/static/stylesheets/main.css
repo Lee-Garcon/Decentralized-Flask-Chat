@@ -2,6 +2,11 @@ body {
   /* font */
   font-family: Helvetica Arial sans-serif;
   font-size: 14px;
+
+  /* position and size */
+  position: relative;
+  width: 98vw;
+  height: 98vh;
 }
 
 #header {
@@ -14,7 +19,8 @@ body {
   right: 0px;
 
   /* size */
-  width: 80vw;
+  width: 75vw;
+  height: 100%;
 
   /* color */
   background-color: #383C44;
@@ -63,12 +69,17 @@ body {
 
     /* color */
     background-color: inherit;
+
+    /* font */
+    color: #585560 !important;
+    font-family: Courier monospace !important;
+    text-decoration: none !important;
   }
 
   #converstation-list .sidebar-entry div:hover {
     /* animation */
     background-color: #383C44;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
   }
 
   #converstation-list .sidebar-entry-selected div {
