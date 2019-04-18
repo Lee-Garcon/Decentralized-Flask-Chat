@@ -14,6 +14,8 @@ VERSION = '0.0.1'
 
 REQUIRED = ['pycrypto', 'flask', 'flask-cors', 'requests']
 
+EXTRAS = [] # TODO: what does this even mean?
+
 cpath = os.path.abspath(os.path.dirname(__file__))
 
 try:
