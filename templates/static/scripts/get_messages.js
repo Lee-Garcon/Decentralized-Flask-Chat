@@ -1,4 +1,4 @@
-var message_list, update_interval;
+var update_interval = undefined;
 
 function getMessages() {
   var msgReq = new XMLHttpRequest();
@@ -12,7 +12,7 @@ function getMessages() {
 }
 
 function updateDisplay(message) {
-  message_list.innerHTML += `
+  updateDisplay.list.innerHTML += `
   <li>
     <span class="message-author">${message.author}</span>
     <span class="message-timestamp">${message.timestamp}</span>
@@ -22,6 +22,6 @@ function updateDisplay(message) {
 }
 
 config.sysenv.onload_functions.push(() => {
-  message_list = document.getElementById('message-list');
+  updateDisplay.list = document.getElementById('message-list');
   update_interval = setInterval(getMessages, config.im_behavior.update_interval); // twice a second
 });
