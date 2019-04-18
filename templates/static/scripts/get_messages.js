@@ -4,7 +4,9 @@ function getMessages() {
   var msgReq = new XMLHttpRequest();
   msgReq.onreadystatechange = () => {
     if (msgReq.readyState == 4 && msgReq.status == 200) {
-      updateDisplay(JSON.parse(msgReq.responseText));
+      msgReq.responseText = JSON.parse(msgReq.responseText);
+      if (msgReq.responseText.author != config.sysenv.last_user) populateSidebar();
+      updateDisplay(msgReq.responseText);
     }
   }
   msgReq.open("POST", "/sys/update");

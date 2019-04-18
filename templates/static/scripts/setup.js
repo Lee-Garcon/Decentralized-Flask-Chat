@@ -4,7 +4,9 @@ var default_config = {
     send_server_timeout: 3000 // miliseconds to wait before the client asks if the server is down
   },
   sysenv: {
-    onload_functions: []
+    onload_functions: [],
+    last_user: "undefined",
+    curr_user: window.location.pathName.split('/', 3)[2]
   }
 }
 
