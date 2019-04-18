@@ -10,7 +10,7 @@ URL = 'https://github.com/Lee-Garcon/Decentralized-Flask-Chat'
 EMAIL = 'wallace.dylan00@gmail.com'
 AUTHOR = 'Lee-Garcon, Exr0n'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = 0.0.1
+VERSION = '0.0.1'
 
 REQUIRED = ['pycrypto', 'flask', 'flask-cors', 'requests']
 
