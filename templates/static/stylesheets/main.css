@@ -46,11 +46,17 @@ body {
 }
   #converstation-list .sidebar-entry div {
     /* size */
+    width: 100%;
     height: 2em;
+
+    /* color */
+    background-color: inherit;
   }
 
   #converstation-list .sidebar-entry div:hover {
-
+    /* animation */
+    background-color: #383C44;
+    transition-duration: 0.5s;
   }
 
   #converstation-list .sidebar-entry-selected div {
