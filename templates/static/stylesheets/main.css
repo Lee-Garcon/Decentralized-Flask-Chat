@@ -3,3 +3,41 @@ body {
   font-family: Helvetica Arial sans-serif;
   font-size: 14px;
 }
+
+#message-list {
+
+}
+
+  #message-list li {
+
+  }
+
+  #message-list li .message-author {
+
+  }
+
+  #message-list li .message-timestamp {
+
+  }
+
+  #message-list li .message-contents {
+
+  }
+
+#send-message-field {
+
+}
+
+#converstation-list {
+
+}
+  #converstation-list .sidebar-entry {
+
+  }
+    #converstation-list .sidebar-entry div {
+      
+    }
+
+  #converstation-list .sidebar-entry-selected {
+
+  }
