@@ -5,7 +5,7 @@ body {
 }
 
 #message-list {
-
+  background-color: #383C44;
 }
 
   #message-list li {
@@ -29,14 +29,28 @@ body {
 }
 
 #converstation-list {
+  /* placement */
+  position: absolute;
+  left: 0px;
 
+  /* size */
+  width: 25%;
+  height: 100%;
+
+  /* color */
+  background-color: #28262C;
+
+  /* font */
+  font-size: 16px;
+  color: #585560;
 }
   #converstation-list .sidebar-entry div {
-
+    /* size */
+    height: 2em;
   }
 
   #converstation-list .sidebar-entry div:hover {
-    
+
   }
 
   #converstation-list .sidebar-entry-selected div {

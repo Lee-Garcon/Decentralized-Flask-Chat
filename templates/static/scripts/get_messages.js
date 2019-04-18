@@ -16,9 +16,11 @@ function getMessages() {
 function updateDisplay(message) {
   updateDisplay.list.innerHTML += `
   <li>
-    <span class="message-author">${message.author}</span>
-    <span class="message-timestamp">${message.timestamp}</span>
-    <span class="message-contents">${message.contents}</span>
+    <div>
+      <span class="message-author">${message.author}</span>
+      <span class="message-timestamp">${message.timestamp}</span>
+      <span class="message-contents">${message.contents}</span>
+    </div>
   </li>
   `;
 }
