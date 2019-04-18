@@ -4,7 +4,19 @@ body {
   font-size: 14px;
 }
 
+#header {
+  height: 15%;
+}
+
 #message-list {
+  /* position */
+  position: absolute;
+  right: 0px;
+
+  /* size */
+  width: 80vw;
+
+  /* color */
   background-color: #383C44;
 }
 
@@ -34,15 +46,15 @@ body {
   left: 0px;
 
   /* size */
-  width: 25%;
-  height: 100%;
+  width: 20vw;
+  height: 85%;
 
   /* color */
   background-color: #28262C;
 
   /* font */
   font-size: 16px;
-  color: #585560;
+  color: #585560!important;
 }
   #converstation-list .sidebar-entry div {
     /* size */
