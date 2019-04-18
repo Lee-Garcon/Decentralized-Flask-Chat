@@ -9,7 +9,7 @@ function getMessages() {
       updateDisplay(msgReq.responseText);
     }
   }
-  msgReq.open("POST", "/sys/update");
+  msgReq.open("POST", "/sys/get_messages");
   msgReq.send("pls r dere new mesagz??");
 }
 
