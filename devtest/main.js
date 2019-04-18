@@ -6,7 +6,7 @@ const app = express();
 app.use((req, res) => {
   console.log(`
 ${Date()}
-    ${req.method} ${req.host} ${req.url}
+    ${req.method} ${req.hostname} ${req.url}
     from ${req.ip}`);
     req.next();
 });
