@@ -8,7 +8,7 @@ function getMessages() {
     }
   }
   msgReq.open("POST", "/sys/update");
-  msgReq.send();
+  msgReq.send("pls r dere new mesagz??");
 }
 
 function updateDisplay(message) {
