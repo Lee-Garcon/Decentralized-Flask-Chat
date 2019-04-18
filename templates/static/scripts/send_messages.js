@@ -11,7 +11,7 @@ function sendMessage() {
     }
   }
   sendReq.open("POST", "/sys/send_message");
-  sendReq.send(sendMessage.field.value);
+  sendReq.send(JSON.stringify( {message: sendMessage.field.value} ));
 }
 
 config.sysenv.onload_functions.push( () => {
