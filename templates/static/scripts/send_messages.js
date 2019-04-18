@@ -6,6 +6,7 @@ function sendMessage() {
   var sendReq = new XMLHttpRequest();
   sendReq.onreadystatechange = () => {
     if (sendReq.readyState == 4 && sendReq.status == 200) {
+      sendMessage.field.value = ''; // clear the message box
       clearTimeout(errTimeout); // stop the client from yelling about stuff
     }
   }
