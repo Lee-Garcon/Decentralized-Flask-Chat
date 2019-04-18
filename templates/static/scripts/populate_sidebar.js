@@ -7,9 +7,9 @@ function populateSidebar() {
       for (let entry of contacts) {
         populateSidebar.sidebar.innerHTML += `
         <li class="sidebar-entry${(entry.id == config.sysenv.curr_user ? " sidebar-entry-selected" : "")}">
-          <div>
-            <a href="/chat/${entry.id}">${entry.name}</a>
-          </div>
+          <button href="/chat/${entry.id}">
+            <p>${entry.name}</p>
+          </button>
         </li>
         `;
       }

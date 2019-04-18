@@ -12,17 +12,23 @@ body {
   height: 15%;
 }
 
-#message-list {
+#im-area {
   /* position */
   position: fixed;
   right: 0px;
+  /*float: right;*/
 
   /* size */
-  width: 75vw;
-  height: 100%;
+  width: 70vw;
+  height: 85vh;
 
   /* color */
   background-color: #383C44;
+}
+
+#message-list {
+  /* size */
+  height: 82vh;
 }
 
   #message-list li {
@@ -42,7 +48,13 @@ body {
   }
 
 #send-message-field {
+  /* placement */
+  position: fixed;
+  bottom: 0px;
 
+  /* size */
+  width: 90%;
+  height: 3vh;
 }
 
 #converstation-list {
@@ -52,7 +64,8 @@ body {
 
   /* size */
   width: 20vw;
-  height: 85%;
+  height: 85vh;
+  padding: 10px;
 
   /* color */
   background-color: #28262C;
@@ -60,8 +73,9 @@ body {
   /* font */
   font-size: 16px;
   color: #585560!important;
+  vertical-align: center;
 }
-  #converstation-list .sidebar-entry div {
+  #converstation-list .sidebar-entry button {
     /* size */
     width: 100%;
     height: 2em;
@@ -75,12 +89,12 @@ body {
     text-decoration: none !important;
   }
 
-  #converstation-list .sidebar-entry div:hover {
+  #converstation-list .sidebar-entry button:hover {
     /* animation */
     background-color: #383C44;
     transition-duration: 0.2s;
   }
 
-  #converstation-list .sidebar-entry-selected div {
+  #converstation-list .sidebar-entry-selected button {
 
   }
