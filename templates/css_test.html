@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="static/stylesheets/main.css">
+</head>
+<body>
+  <div id="header">
+    <h3>Decentralized Hyper ChatProgram v{{config.version}}</h3>
+  </div>
+  <div id="sidebar">
+    <ul id="converstation-list">
+      <li class="sidebar-entry sidebar-entry-selected">
+        <div>
+          <a href="/chat/todo">Connor</a>
+        </div>
+      </li>
+      <li class="sidebar-entry">
+        <div>
+          <a href="/chat/todo">James</a>
+        </div>
+      </li>
+      <li class="sidebar-entry">
+        <div>
+          <a href="/chat/todo">Hannah</a>
+        </div>
+      </li>
+      <li class="sidebar-entry">
+        <div>
+          <a href="/chat/todo">xX_420_blazeit_Xx</a>
+        </div>
+      </li>
+      <li class="sidebar-entry">
+        <div>
+          <a href="/chat/todo">DHCP Help Bot</a>
+        </div>
+      </li>
+    <ul>
+  </div>
+  <div id="im-area">
+    <div id="text-area">
+      <ul id="message-list">
+        <li>
+          <span class="message-author">Connor</span>
+          <span class="message-timestamp">6 Jan 19 14:32:25</span>
+          <span class="message-contents">Dude i need a heal</span>
+        </li>
+        <li>
+          <span class="message-author">Connor</span>
+          <span class="message-timestamp">6 Jan 19 14:32:49</span>
+          <span class="message-contents">Bruh</span>
+        </li>
+        <li>
+          <span class="message-author">Connor</span>
+          <span class="message-timestamp">6 Jan 19 14:33:12</span>
+          <span class="message-contents">C'mon dude hlep meee</span>
+        </li>
+        <li>
+          <span class="message-author">Jonas</span>
+          <span class="message-timestamp">6 Jan 19 14:34:52</span>
+          <span class="message-contents">nou</span>
+        </li>
+      </ul>
+    </div>
+    <div id="type-area">
+      <form id="send-message" onsubmit="sendMessage();">
+        <input type="text" id="send-message-field">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
