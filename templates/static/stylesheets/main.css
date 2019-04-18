@@ -31,13 +31,14 @@ body {
 #converstation-list {
 
 }
-  #converstation-list .sidebar-entry {
+  #converstation-list .sidebar-entry div {
 
   }
-    #converstation-list .sidebar-entry div {
-      
-    }
 
-  #converstation-list .sidebar-entry-selected {
+  #converstation-list .sidebar-entry div:hover {
+    
+  }
+
+  #converstation-list .sidebar-entry-selected div {
 
   }
