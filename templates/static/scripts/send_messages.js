@@ -1,4 +1,4 @@
-function sendMessage(text) {
+function sendMessage() {
   var errTimeout = setTimeout(() => {
     alert('Something went wrong whilst sending the message, is the server down?');
   }, config.im_behavior.send_server_timeout);
@@ -10,5 +10,9 @@ function sendMessage(text) {
     }
   }
   sendReq.open("POST", "/sys/send_message");
-  sendReq.send();
+  sendReq.send(sendMessage.field.value);
 }
+
+config.sysenv.onload_functions.push( () => {
+  sendMessage.field = document.getElementById('send-message-field')
+} );

@@ -21,7 +21,7 @@ function updateDisplay(message) {
   `;
 }
 
-window.onload = () => {
+config.sysenv.onload_functions.push(() => {
   message_list = document.getElementById('message-list');
   update_interval = setInterval(getMessages, config.im_behavior.update_interval); // twice a second
-}
+});

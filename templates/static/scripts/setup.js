@@ -2,6 +2,9 @@ var default_config = {
   im_behavior: {
     update_interval: 500, // ms
     send_server_timeout: 3000 // miliseconds to wait before the client asks if the server is down
+  },
+  sysenv: {
+    onload_functions: []
   }
 }
 
@@ -15,3 +18,7 @@ confReq.onreadystatechange = () => {
 }
 confReq.open('POST', '/sys/get_config');
 confReq.send();
+
+window.onload = () => {
+  for (let func in config.sysenv.onload_functions) func();
+}
