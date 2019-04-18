@@ -9,20 +9,33 @@ body {
 }
 
 #header {
-  height: 15%;
+  height: 10vh;
+
+  position: fixed;
+  top: 0px;
 }
 
-#message-list {
+#im-area {
   /* position */
   position: fixed;
   right: 0px;
+  bottom: 0px;
+  /*float: right;*/
 
   /* size */
-  width: 75vw;
-  height: 100%;
+  width: 80vw;
+  height: 90vh;
 
   /* color */
   background-color: #383C44;
+}
+
+#message-list {
+  /* size */
+  height: 88vh;
+
+  /* font */
+  list-style-type: none;
 }
 
   #message-list li {
@@ -42,17 +55,24 @@ body {
   }
 
 #send-message-field {
+  /* placement */
+  position: fixed;
+  bottom: 0px;
 
+  /* size */
+  width: 90%;
+  height: 3vh;
 }
 
 #converstation-list {
   /* placement */
   position: fixed;
   left: 0px;
+  bottom: 0px;
 
   /* size */
   width: 20vw;
-  height: 85%;
+  height: 90vh;
 
   /* color */
   background-color: #28262C;
@@ -60,27 +80,40 @@ body {
   /* font */
   font-size: 16px;
   color: #585560!important;
+  vertical-align: center;
+
+  /* display */
+  list-style-type: none!important;
+  margin: 0px;
+  padding: 0px;
 }
-  #converstation-list .sidebar-entry div {
+  #converstation-list .sidebar-entry a {
+    display: inline-block;
+
     /* size */
-    width: 100%;
+    width: 95%;
     height: 2em;
 
     /* color */
     background-color: inherit;
 
     /* font */
-    color: #585560 !important;
+    color: #dddddd !important;
     font-family: Courier monospace !important;
     text-decoration: none !important;
+    vertical-align: middle;
+
+    /* display */
+    padding-top: 10px;
+    padding-left: 1vw;
   }
 
-  #converstation-list .sidebar-entry div:hover {
+  #converstation-list .sidebar-entry a:hover {
     /* animation */
     background-color: #383C44;
     transition-duration: 0.2s;
   }
 
-  #converstation-list .sidebar-entry-selected div {
+  #converstation-list .sidebar-entry-selected a {
 
   }
