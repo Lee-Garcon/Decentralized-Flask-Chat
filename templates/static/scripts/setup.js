@@ -8,7 +8,7 @@ var default_config = {
   }
 }
 
-var config = {};
+var config = default_config;
 
 var confReq = new XMLHttpRequest();
 confReq.onreadystatechange = () => {
