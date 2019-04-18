@@ -9,7 +9,7 @@ body {
 }
 
 #header {
-  height: 10vh;
+  height: 9vh;
 
   position: fixed;
   top: 0px;
@@ -36,6 +36,7 @@ body {
 
   /* font */
   list-style-type: none;
+  color: #ffffff;
 }
 
   #message-list li {
@@ -47,7 +48,9 @@ body {
   }
 
   #message-list li .message-timestamp {
-
+    font-style: italic;
+    font-size: 0.6em;
+    vertical-align: text-top;
   }
 
   #message-list li .message-contents {
