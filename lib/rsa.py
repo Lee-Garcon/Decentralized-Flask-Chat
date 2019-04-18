@@ -1,7 +1,14 @@
-import Crypto
-from Crypto.PublicKey import RSA
-from Crypto.Cipher import PKCS1_OAEP
-from Crypto import Random
+try:
+	import Crypto
+	from Crypto.PublicKey import RSA
+	from Crypto.Cipher import PKCS1_OAEP
+	from Crypto import Random
+except:
+	import crypto as Crypto
+	from crypto.PublicKey import RSA
+	from crypto.Cipher import PKCS1_OAEP
+	from crypto import Random
+
 import os
 import base64
 import hashlib
@@ -16,11 +23,11 @@ class RSA_Local:
 		key = RSA.generate(2048)
 		pubkey = key.publickey().exportKey("PEM").decode("utf-8")
 		privkey = key.exportKey("PEM").decode("utf-8")
-	
+
 		f = open(self.public_path, 'w')
 		f.write(pubkey)
 		f.close()
-	
+
 		f = open(self.private_path, 'w')
 		f.write(privkey)
 		f.close()
@@ -28,7 +35,7 @@ class RSA_Local:
 		f = open(self.list_path, 'a')
 		f.write(self.public_path + '\n' + self.private_path + '\n')
 		f.close()
-	
+
 		return RSA.importKey(pubkey), RSA.importKey(privkey)
 
 	def load(self):
@@ -83,7 +90,7 @@ class RSA_Guest:
 	def load(self, provided_pubkey):
 		cpath = os.path.abspath(os.path.dirname(__file__))
 		self.keypath = os.path.join(cpath, "../keys/%s.pem" % self.name)
-		
+
 		try:
 			f = open(self.keypath, 'r')
 			self.pubkey = RSA.importKey(f.read())
